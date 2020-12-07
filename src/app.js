@@ -5,6 +5,7 @@ const weather = require('./utils/weather');
 const geoCode = require('./utils/geocode');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const publicDirPath = path.join(__dirname, '../public');
 const templatesDirPath = path.join(__dirname, '../templates/views');
@@ -71,7 +72,6 @@ app.get('/help', (req, res) => {
     });
 })
 
-
 app.get('*', (req, res) => {
     res.render('error', {
         title: 'Page not found',
@@ -96,6 +96,6 @@ app.get('/weather', (req, res) => {
     });
 })
 
-app.listen(3000, () => {
-    console.log('Server is up and running on port 3000');
+app.listen(port, () => {
+    console.log('Server is up and running on port: ' + port);
 })

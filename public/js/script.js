@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     if (inputVal.value) {
-        fetch(`http://localhost:3000/weather?address=${inputVal.value}`).then((response) => {
+        fetch(`/weather?address=${inputVal.value}`).then((response) => {
             response.json().then((data) => {
                 console.log('dataaa', data);
                 if (data.error) {
