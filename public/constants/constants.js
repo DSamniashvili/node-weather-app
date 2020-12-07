@@ -1,0 +1,2 @@
+global.APIKEY = '73a0fe13871371299092585383d19c03';
+global.APIKEYFORMAPBOX = 'pk.eyJ1IjoiZGVhc2Ftbmlhc2h2aWxpIiwiYSI6ImNraTd1c2dkaDNlZGIyem1wYjA2ZXZsb2wifQ.PWr9W2h4QMja5ggyRyuflQ';

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Home - Weather</title>
+
+<head>
+    <link rel="stylesheet" href='/styles/index.css'>
+
+
+</head>
+
+<body>
+    <div class="main-content-container">
+        {{>header}}
+        <div class="main-content-wrapper">
+            <form>
+                <label for="address">Enter location name:</label><br>
+                <input type="text" id="address" name="address" placeholder="Philadelphia"><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="main-content-autput-wrapper">
+                <p class="location-name"></p>
+                <p class="location-fullname"></p>
+                <p class="location-weather"></p>
+            </div>
+        </div>
+
+
+
+        <script src="/js/script.js"></script>
+
+        {{>footer}}
+    </div>
+</body>
+
+</html>
