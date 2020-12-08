@@ -35,10 +35,4 @@ form.addEventListener('submit', (event) => {
     } else {
         locationName.textContent = 'Please provide a location';
     }
-})
-
-// fetch('http://localhost:3000/weather?address=philadelphia').then((response) => {
-//     response.json().then((data) => {
-//         console.log('data', data);
-//     })
-// })
+});

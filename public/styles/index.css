@@ -6,8 +6,8 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-
     position: relative;
+    margin: 0 auto;
 }
 
 .main-content-container {
@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 800px;
     justify-content: center;
 }
 
@@ -27,6 +26,7 @@ body {
     width: 100%;
     padding: 10vh;
     align-items: center;
+    box-sizing: border-box;
 }
 
 form {

@@ -37,7 +37,6 @@ app.get('/weather', (req, res) => {
 
         if (data) {
             weather(data, (error, dataWeather) => {
-                console.log('weather', error, dataWeather);
                 if (error) {
                     return res.send({ error });
                 }
