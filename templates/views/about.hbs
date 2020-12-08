@@ -8,22 +8,29 @@
 </head>
 
 <body>
+
     {{>header}}
     <p>{{textContent}}</p>
-    <p>This app is requesting two API -s to fetch data.</p>
-    <p>The first one is "mapbox" for transforming given location to coordinates (gives back lattitude and longtitude)
-    </p>
+    <div class="about-page-container">
+        <p>This app is requesting two API -s to fetch data.</p>
+        <p>The first one is "mapbox" for transforming given location to coordinates (gives back lattitude and
+            longtitude)
+        </p>
 
-    <p>The second one is: "openweathermap" that receives lattitude and longtitude and returns current weather for the
-        given coordinates</p>
-    <p>
-        App is built with the help of two main libraries:
-    <ul>
-        <li>request - for making HTTP requests</li>
-        <li>hbs - Simple and easy templating engine</li>
-    </ul>
-    </p>
+        <p>The second one is: "openweathermap" that receives lattitude and longtitude and returns current weather for
+            the
+            given coordinates</p>
+        <p>
+            App is built with the help of two main libraries:
+        </p>
+        <ul>
+            <li>request - for making HTTP requests</li>
+            <li>hbs - Simple and easy templating engine</li>
+        </ul>
+
+    </div>
     {{>footer}}
+
 </body>
 
 </html>
