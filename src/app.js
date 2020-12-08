@@ -59,15 +59,15 @@ app.get('/weather', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'about page',
-        textContent: 'this is about',
+        textContent: 'This page contains info about the current app',
         createdBy: 'Dea Samniashvili',
     });
 })
 
-app.get('/help', (req, res) => {
+app.get('/contact', (req, res) => {
     res.render('help', {
         title: 'help page',
-        textContent: 'this is help page',
+        textContent: 'This page is to provide contact information.',
         createdBy: 'Dea Samniashvili',
     });
 })
