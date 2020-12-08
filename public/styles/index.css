@@ -25,7 +25,7 @@ body {
     flex: 1;
     min-height: 400px;
     width: 100%;
-    padding: 2vh;
+    padding: 10vh;
     align-items: center;
 }
 
@@ -78,7 +78,26 @@ h1 {
     text-decoration: none;
 }
 
-.about-page-container {
+.about-page-container,
+.help-page-container {
     display: flex;
     flex-direction: column;
+    min-height: 400px;
+    padding: 10vh 0;
+    box-sizing: border-box;
+}
+
+
+input[type="submit" i] {
+    padding: 10px;
+    border: 0;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+input[type="text" i]{
+    padding: 5px;
 }

@@ -64,7 +64,7 @@ app.get('/about', (req, res) => {
     });
 })
 
-app.get('/contact', (req, res) => {
+app.get('/help', (req, res) => {
     res.render('help', {
         title: 'help page',
         textContent: 'This page is to provide contact information.',
