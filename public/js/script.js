@@ -15,9 +15,10 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     if (inputVal.value) {
+        locationName.textContent = 'Loading...';
         fetch(`/weather?address=${inputVal.value}`).then((response) => {
+
             response.json().then((data) => {
-                console.log('dataaa', data);
                 if (data.error) {
                     console.log('error: ', data.error);
                     locationName.textContent = data.error;
@@ -28,6 +29,8 @@ form.addEventListener('submit', (event) => {
                 }
             })
         })
+    } else {
+        locationName.textContent = 'Please provide a location';
     }
 })
 
