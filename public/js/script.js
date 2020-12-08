@@ -6,13 +6,14 @@ let locationFullName = document.querySelector('.location-fullname');
 let locationWeather = document.querySelector('.location-weather');
 
 
-locationName.textContent = ''
-locationFullName.textContent = '';
-locationWeather.textContent = '';
 
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    locationName.textContent = ''
+    locationFullName.textContent = '';
+    locationWeather.textContent = '';
 
     if (inputVal.value) {
         locationName.textContent = 'Loading...';
@@ -26,6 +27,8 @@ form.addEventListener('submit', (event) => {
                     locationName.textContent = `Provided location: ${data.address}`;
                     locationFullName.textContent = `Full location name: ${data.location}`;
                     locationWeather.textContent = `Current weather: ${data.weather}`;
+
+                    inputVal.value = '';
                 }
             })
         })
